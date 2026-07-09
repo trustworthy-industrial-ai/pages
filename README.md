@@ -1,4 +1,4 @@
-Essays and research site
+Articles and research site
 
 
 Research Program Version: 1.0

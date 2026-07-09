@@ -199,13 +199,13 @@ h1, h2, h3, .page-heading, .post-title, .site-title {
   color: var(--muted);
 }
 
-.essay-search {
+.article-search {
   position: relative;
   width: 100%;
   max-width: 16rem;
 }
 
-.essay-search__input {
+.article-search__input {
   width: 100%;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   font-size: 0.85rem;
@@ -216,13 +216,13 @@ h1, h2, h3, .page-heading, .post-title, .site-title {
   background: var(--bg-subtle);
 }
 
-.essay-search__input:focus {
+.article-search__input:focus {
   outline: none;
   border-color: var(--accent);
   background: #fff;
 }
 
-.essay-search__results {
+.article-search__results {
   position: absolute;
   z-index: 10;
   top: calc(100% + 0.3rem);
@@ -238,7 +238,7 @@ h1, h2, h3, .page-heading, .post-title, .site-title {
   box-shadow: 0 6px 18px rgba(26, 31, 43, 0.08);
 }
 
-.essay-search__results li {
+.article-search__results li {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
@@ -248,23 +248,23 @@ h1, h2, h3, .page-heading, .post-title, .site-title {
   font-size: 0.85rem;
 }
 
-.essay-search__results li:hover {
+.article-search__results li:hover {
   background: var(--bg-subtle);
 }
 
-.essay-search__results a {
+.article-search__results a {
   border-bottom: none !important;
   color: var(--ink);
   flex: 1;
 }
 
-.essay-search__date {
+.article-search__date {
   color: var(--faint);
   font-size: 0.78rem;
   white-space: nowrap;
 }
 
-.essay-search__empty {
+.article-search__empty {
   color: var(--faint);
   font-style: italic;
 }
