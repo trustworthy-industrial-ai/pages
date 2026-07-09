@@ -10,7 +10,6 @@
   short: "Decisions"
   status: "current"
   volume: "Volume I"
-  url: "/volume-i/"
 - name: "Industrial Agents"
   short: "Agents"
   status: "future"

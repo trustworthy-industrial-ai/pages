@@ -138,12 +138,6 @@ h1, h2, h3, .page-heading, .post-title, .site-title {
 .domain-pill--current {
   background: var(--accent);
   color: #fff;
-  cursor: pointer;
-}
-
-.domain-pill--current a {
-  color: #fff;
-  border-bottom: none !important;
 }
 
 .domain-pill--future {
