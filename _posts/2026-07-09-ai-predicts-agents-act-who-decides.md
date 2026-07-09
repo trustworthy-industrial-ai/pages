@@ -57,7 +57,7 @@ Not a governance framework bolted on after the fact. Not a compliance checklist.
 
 A governed decision layer grounds reasoning in engineering knowledge, makes the decision explicit and auditable, and gives a human or a system the standing to say: *I authorized this, and here is why.*
 
-This is the first essay in a research program on engineering trust into industrial AI. Governance is one part of that larger discipline — the part this first volume is about.
+This is the first article in a research program on engineering trust into industrial AI. Governance is one part of that larger discipline — the part this first volume is about.
 
 ---
 

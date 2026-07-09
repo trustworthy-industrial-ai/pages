@@ -2,9 +2,11 @@
 
 title: Engineering Trustworthy Industrial AI
 author: Sanjay Prasad
-email: hello@trustworthy-industrial-ai.io
+# email: intentionally unset -- hello@trustworthy-industrial-ai.io does not
+# exist yet (custom domain not purchased). Set this once that mailbox is real;
+# footer.html only renders it when site.email is present.
 description: >-
-  Research and essays on engineering trust into industrial AI systems.
+  Research and articles on engineering trust into industrial AI systems.
 baseurl: ""
 url: "https://trustworthy-industrial-ai.github.io"
 twitter_username:
@@ -26,7 +28,7 @@ pagination:
   sort_field: "date"
   sort_reverse: true
 
-# Collections for organizing essays by research domain
+# Collections for organizing articles by research domain
 collections:
   governance:
     output: true
@@ -59,7 +61,7 @@ markdown: kramdown
 kramdown:
   syntax_highlighter: rouge
 
-permalink: /essays/:year/:month/:day/:title/
+permalink: /articles/:year/:month/:day/:title/
 show_excerpts: true
 
 # Exclude from processing

@@ -6,7 +6,7 @@ layout: default
   {%- if paginator.page == 1 -%}
   <div class="home-intro">
     <p class="home-intro__lede">
-      Essays on why industrial AI needs an engineered, auditable decision layer
+      Articles on why industrial AI needs an engineered, auditable decision layer
       between prediction and action &mdash; and what it takes to build one.
     </p>
   </div>
@@ -18,20 +18,20 @@ layout: default
 
   {%- if site.posts.size > 0 -%}
     <div class="section-heading-row">
-      <h2 class="post-list-heading">Essays</h2>
-      <div class="essay-search">
+      <h2 class="post-list-heading">Articles</h2>
+      <div class="article-search">
         <input
           type="search"
-          id="essay-search-input"
-          class="essay-search__input"
-          placeholder="Search essays by title&hellip;"
-          aria-label="Search essays by title"
+          id="article-search-input"
+          class="article-search__input"
+          placeholder="Search articles by title&hellip;"
+          aria-label="Search articles by title"
         />
-        <ul id="essay-search-results" class="essay-search__results" hidden></ul>
+        <ul id="article-search-results" class="article-search__results" hidden></ul>
       </div>
     </div>
 
-    <ul class="post-list" id="essay-post-list">
+    <ul class="post-list" id="article-post-list">
       {%- for post in the_posts -%}
       <li class="post-card">
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
@@ -61,14 +61,14 @@ layout: default
         {%- elsif site.show_excerpts -%}
           <p class="post-card__excerpt">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
         {%- endif -%}
-        <a class="post-card__read-more" href="{{ post.url | relative_url }}">Read essay &rarr;</a>
+        <a class="post-card__read-more" href="{{ post.url | relative_url }}">Read article &rarr;</a>
       </li>
       {%- endfor -%}
 
       {%- if paginator.page == paginator.total_pages -%}
       <li class="post-card post-card--upcoming">
         <div class="post-card__meta">
-          <span class="badge badge--upcoming">Next essay</span>
+          <span class="badge badge--upcoming">Next article</span>
         </div>
         <h3 class="post-card__title post-card__title--muted">
           The next industrial catastrophe will involve an overconfident AI
@@ -83,13 +83,13 @@ layout: default
     </ul>
 
     {%- if paginator.total_pages > 1 -%}
-    <nav class="pagination-nav" aria-label="Essay pagination">
+    <nav class="pagination-nav" aria-label="Article pagination">
       {%- if paginator.previous_page -%}
-        <a class="pagination-nav__link" href="{{ paginator.previous_page_path | relative_url }}">&larr; Newer essays</a>
+        <a class="pagination-nav__link" href="{{ paginator.previous_page_path | relative_url }}">&larr; Newer articles</a>
       {%- endif -%}
       <span class="pagination-nav__status">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
       {%- if paginator.next_page -%}
-        <a class="pagination-nav__link pagination-nav__link--next" href="{{ paginator.next_page_path | relative_url }}">See more essays &rarr;</a>
+        <a class="pagination-nav__link pagination-nav__link--next" href="{{ paginator.next_page_path | relative_url }}">See more articles &rarr;</a>
       {%- endif -%}
     </nav>
     {%- endif -%}

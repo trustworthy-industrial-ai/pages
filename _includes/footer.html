@@ -4,21 +4,17 @@
   <div class="wrapper">
 
     <div class="footer-row">
-      <span class="p-name">{{ site.author | escape }}</span>
+      <span class="p-name footer-row__copyright">&copy; {{ site.time | date: "%Y" }} {{ site.author | escape }}</span>
       {%- if site.email -%}
         <span class="footer-row__dot">&middot;</span>
         <a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a>
       {%- endif -%}
       <span class="footer-row__dot">&middot;</span>
-      <a href="https://github.com/{{ site.github_username }}">GitHub</a>
-      <span class="footer-row__dot">&middot;</span>
       <a href="{{ "/about/" | relative_url }}">About</a>
-      <span class="footer-row__dot">&middot;</span>
-      <a href="https://github.com/{{ site.github_username }}/{{ site.github_username }}.github.io/blob/main/RESEARCH-ROADMAP.md">Research Roadmap</a>
     </div>
 
     <div class="footer-email-signup">
-      <h3>Get new essays in your inbox</h3>
+      <h3>Stay updated</h3>
       {% include email-signup.html %}
     </div>
 
