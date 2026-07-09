@@ -1,6 +1,6 @@
 (function () {
-  var input = document.getElementById("essay-search-input");
-  var results = document.getElementById("essay-search-results");
+  var input = document.getElementById("article-search-input");
+  var results = document.getElementById("article-search-results");
   if (!input || !results) return;
 
   var index = null;
@@ -23,8 +23,8 @@
     }
     if (matches.length === 0) {
       var li = document.createElement("li");
-      li.className = "essay-search__empty";
-      li.textContent = "No essays match “" + query + "”";
+      li.className = "article-search__empty";
+      li.textContent = "No articles match “" + query + "”";
       results.appendChild(li);
     } else {
       matches.slice(0, 8).forEach(function (post) {
@@ -33,7 +33,7 @@
         a.href = post.url;
         a.textContent = post.title;
         var span = document.createElement("span");
-        span.className = "essay-search__date";
+        span.className = "article-search__date";
         span.textContent = post.date;
         li.appendChild(a);
         li.appendChild(span);
