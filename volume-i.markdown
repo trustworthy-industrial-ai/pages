@@ -14,12 +14,12 @@ This page is a hand-curated compilation of the articles that belong to Volume I,
 1. **[The Next Industrial Catastrophe Will Involve an Overconfident AI]({{ "/articles/2026/07/10/the-next-industrial-catastrophe/" | relative_url }})** &mdash; Jul 10, 2026
    Names the failure: a confident wrong answer costs more than a refusal, and almost no AI system built today knows the difference.
 
-2. **[The Ungoverned Middle]({{ "/articles/2026/07/10/the-ungoverned-middle/" | relative_url }})** &mdash; Jul 10, 2026
+2. **[The Ungoverned Middle]({{ "/articles/2026/07/12/the-ungoverned-middle/" | relative_url }})** &mdash; Jul 12, 2026
    One seam of the problem, up close: the decision layer between prediction and execution, the Governed Decision Layer, and the "who signs?" test.
 
-3. **[Correlation Runs the Dashboard. Causation Runs the Plant.]({{ "/articles/2026/07/11/correlation-runs-the-dashboard/" | relative_url }})** &mdash; Jul 11, 2026
+3. **[Correlation Runs the Dashboard. Causation Runs the Plant.]({{ "/articles/2026/07/14/correlation-runs-the-dashboard/" | relative_url }})** &mdash; Jul 14, 2026
    A different seam of the same problem: why grounded reasoning, not just accurate prediction, is what a plant actually needs.
 
-4. **[Engineering Trustworthy Industrial AI]({{ "/articles/2026/07/12/engineering-trustworthy-industrial-ai/" | relative_url }})** &mdash; Jul 12, 2026
+4. **[Engineering Trustworthy Industrial AI]({{ "/articles/2026/07/18/engineering-trustworthy-industrial-ai/" | relative_url }})** &mdash; Jul 18, 2026
    The reveal: these are two of seven dimensions a whole research program is organized around. The map, in full.
 {: .volume-toc}
