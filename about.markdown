@@ -12,20 +12,19 @@ This research program advances the engineering discipline of Trustworthy Industr
 
 1. **Engineering Knowledge** — what the AI knows
 2. **Grounded Reasoning** — how the AI reasons
-3. **Trustworthy Decisions** — why engineers should trust the decision 
-    - *see [Volume I]({{ "/volume-i/" | relative_url }})*
+3. **Trustworthy Decisions** — why engineers should trust the decision
 4. **Industrial Agents** — how work gets executed
 5. **Industrial AI Platforms** — where intelligence lives
 6. **Operational Deployment** — how intelligence is deployed safely
 7. **Industrial AI Products** — how trust creates lasting business value
 
-The domains beyond Volume I aren't a committed calendar — they're the directions this initiative expects to explore next, as the field itself evolves. If you would like to contribute, please drop a note at skprasad@gmail.com
+[Volume I]({{ "/volume-i/" | relative_url }}) makes the case for the whole framework, with close looks at two of these seven — Grounded Reasoning and Trustworthy Decisions. Which dimension earns a dedicated volume of its own next isn't a committed calendar — that's a genuinely open question, and the direction this initiative takes will depend on where the work is furthest along. If you would like to contribute, please drop a note at skprasad@gmail.com
 
 **Guiding principle:** the goal isn't to chase every technology trend, but to establish engineering principles for trustworthy industrial AI — principles durable enough to outlast any one wave of tooling. Success looks like practitioners citing and building on these ideas because they're useful, not because they're ours.
 
 ### Explore
 
-- [Volume I: The Governed Decision Layer]({{ "/volume-i/" | relative_url }}) — the current article series
+- [Volume I: Motivation]({{ "/volume-i/" | relative_url }}) — the current article series
 - [Canonical Terminology]({{ "/terms/" | relative_url }}) — definitions used across this program
 
 ### Get involved

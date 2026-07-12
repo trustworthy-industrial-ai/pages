@@ -38,7 +38,7 @@ Reasoning constrained by engineering knowledge, standards, physical principles, 
 The architectural layer between reasoning and operational action, responsible for validating, governing, explaining, authorizing, and recording industrial decisions.
 {: #governed-decision-layer}
 
-**ASSET-grade** — *Canonical* &middot; first introduced in [Volume I]({{ "/volume-i/" | relative_url }})
+**ASSET-grade** — *Canonical*
 A benchmark describing Industrial AI outputs that are Auditable, Specific, Standards-aligned, Explainable, and Tested — tested meaning the output's grounds can be interrogated and the decision rehearsed before anyone commits. ASSET-grade is what makes an output deserve trust; trusted is the outcome it earns, not a letter in the benchmark. The acronym is fixed — additional letters should not be appended. *(Revised 2026-07-10: T previously read "Trusted"; changed to remove the circularity of defining trust by trust.)*
 {: #asset-grade}
 

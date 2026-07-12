@@ -2,13 +2,19 @@
 layout: post
 title: "Engineering Trustworthy Industrial AI"
 description: "Capability is advancing. Trust is not. Defining the discipline — and the seven dimensions — of engineering trust into industrial AI."
-date: 2026-07-10
+date: 2026-07-18 08:00:00 +0300
 author: "Dr. Sanjay K Prasad"
 tags: [foundations]
 excerpt_separator: <!--more-->
 ---
 
-In thirty years around mines, plants, and refineries, I have never heard a plant manager ask what architecture a model uses, or get excited about self-attention. The questions are always the same: *Can I act on this? Will it hold up in the audit? Who is accountable if it's wrong?*
+Three pieces so far, and I have deliberately not named the thing they all belong to.
+
+[Overconfidence]({{ "/articles/2026/07/10/the-next-industrial-catastrophe/" | relative_url }}) named a failure: a confident wrong answer costs more than a refusal, and almost no AI system built today knows the difference. [The Ungoverned Middle]({{ "/articles/2026/07/12/the-ungoverned-middle/" | relative_url }}) took that apart along one seam — decisions, and who answers for them. [Causation]({{ "/articles/2026/07/14/correlation-runs-the-dashboard/" | relative_url }}) took it apart along a different seam — reasoning, and whether an inference is grounded in mechanism or merely in pattern.
+
+Here is the thing they belong to.
+
+In thirty years around mines, plants, and refineries, I have never heard a plant manager ask what architecture a model uses, or get excited about self-attention. The questions are always the same: *Can I act on this? Will it hold up in the audit? Who is accountable if it's wrong?* Those are the questions the last three pieces were each answering, from a different angle, before I said so out loud.
 
 And yet capability is where all the attention goes. Industrial AI has never been more capable — nor more in focus. Foundation models, industrial agents, digital twins, optimization — all advancing fast, all being marketed to the plant. Industrial firms are moving from lighthouse proofs-of-concept to platform thinking. OT vendors are acquiring industrial AI firms to strengthen their portfolios.
 
@@ -133,12 +139,21 @@ Real AI engineering still lives inside the dimensions. Engineering Knowledge inc
 
 And the dependency runs the opposite way to what you might expect. If the models are weak, this engineering protects you: grounding and governance catch bad output before it becomes a signed action. If the models are strong, this engineering converts capability into permitted autonomy, because more capability means more autonomy, and more autonomy means more trust to earn. Better models make these dimensions more necessary, not less.
 
+A second objection is worth taking just as seriously.
+
+## Isn't someone already doing this?
+
+Fair question, and the honest answer is: partly — and that's a good sign, not a problem.
+
+DNV — the classification society that certifies ships, platforms, and pipelines — is already asking how to build trust into industrial AI systems. That's not a coincidence. It means the institutions that actually carry this risk have independently arrived at the same starting question this program does. Academic venues are forming tracks on "AI Engineering" as a discipline in its own right. None of that is competition. It's confirmation that the premise — trust must be engineered, not hoped for — is a live question for the people who have to answer for the consequences, not an eccentric one.
+
+What differs is the job, in the same way it differs from responsible AI and AI safety, discussed earlier. A classification society's work is a certification question: given a system, how do you verify it's trustworthy? This program sits upstream of that — how do you engineer the system so that certification is even possible in the first place. A certifiable system still has to be built. That's what these seven dimensions are for.
 
 ## An invitation
 
 If you build, operate, or sign for industrial AI systems, this program is for you — and it will be better with your disagreement than with your applause. Field experience beats theory here, every time.
 
-Each of the seven dimensions will be explored in depth in the articles that follow — starting with the one where the pain is sharpest: the decision.
+You have already seen two of the seven dimensions up close, in the two pieces before this one — decisions, and reasoning. Neither was named as part of anything larger at the time; both were symptoms. This piece is the diagnosis. The remaining five deserve the same treatment eventually, and which one goes first from here is a genuine open question, not false modesty.
 
 [Subscribe via RSS]({{ "/feed.xml" | relative_url }}) to follow along, or start with the [canonical terminology]({{ "/terms/" | relative_url }}) that everything else builds on.
 

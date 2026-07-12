@@ -2,7 +2,7 @@
 layout: post
 title: "The Ungoverned Middle"
 description: "AI predicts. Agents act. The decision between them is where trust is won or lost — and today, almost nobody engineers it."
-date: 2026-07-11
+date: 2026-07-12 18:00:00 +0300
 author: "Dr. Sanjay K Prasad"
 tags: [governed-decision-layer, who-signs]
 excerpt_separator: <!--more-->
@@ -124,12 +124,10 @@ One boundary should be stated plainly: some signatures never delegate. Decisions
 
 Signing is not a formality. It is trust, compressed into accountability. A signature says: I have seen the grounds, I accept the consequences, and I can defend this decision to anyone who asks. An industrial AI system that cannot support that sentence is a prediction engine with good marketing.
 
-## Where this volume goes
+## Grounded Reasoning for Better Decisions
 
-This article opens [Volume I]({{ "/volume-i/" | relative_url }}), which stays in the middle and goes deep. Ahead:
+Decision governance is only one half of what makes a recommendation trustworthy. [The other half]({{ "/articles/2026/07/14/correlation-runs-the-dashboard/" | relative_url }}) is whether the reasoning underneath it was grounded at all — a different failure mode, covered next. After that, [the piece that follows]({{ "/articles/2026/07/18/engineering-trustworthy-industrial-ai/" | relative_url }}) draws both together: these are two of seven dimensions a whole research program is organized around, not two unrelated complaints.
 
-- What a decision must *carry* — the anatomy of an auditable decision record.
-- The four verdicts — proceed, hold, escalate, abort — and how a governed layer renders them.
-- The counterintuitive one: how governance *expands* AI autonomy rather than restricting it.
+The anatomy of a decision record, the four verdicts a governed layer can render, and the case that governance *expands* autonomy rather than restricting it — all of that is real, and it deserves a volume of its own when its turn comes.
 
 Prediction will keep getting better. Execution will keep getting faster. Neither will answer the plant manager's questions — *Can I act on this? Will it hold up in the audit? Who is accountable if it's wrong?* Those are answered in the middle. Govern it, and capability becomes trust. Leave it ungoverned, and industrial AI remains what it too often is today: impressive, and unsigned.
