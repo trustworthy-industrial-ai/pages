@@ -8,7 +8,7 @@ Industrial AI is entering an era of unprecedented capability. Large language mod
 
 Capability alone is not enough. Industrial AI must earn trust — and trust must be engineered.
 
-This research program advances the engineering discipline of Trustworthy Industrial AI. It's organized around seven areas that are expected to stay relevant even as the underlying technology changes:
+This research program advances the engineering discipline of Trustworthy Industrial Decisions in the Age of AI. It's organized around seven areas that are expected to stay relevant even as the underlying technology changes:
 
 1. **Engineering Knowledge** — what the AI knows
 2. **Grounded Reasoning** — how the AI reasons
@@ -20,7 +20,7 @@ This research program advances the engineering discipline of Trustworthy Industr
 
 [Volume I]({{ "/volume-i/" | relative_url }}) makes the case for the whole framework, with close looks at two of these seven — Grounded Reasoning and Trustworthy Decisions. Which dimension earns a dedicated volume of its own next isn't a committed calendar — that's a genuinely open question, and the direction this initiative takes will depend on where the work is furthest along. If you would like to contribute, please drop a note at skprasad@gmail.com
 
-**Guiding principle:** the goal isn't to chase every technology trend, but to establish engineering principles for trustworthy industrial AI — principles durable enough to outlast any one wave of tooling. Success looks like practitioners citing and building on these ideas because they're useful, not because they're ours.
+**Guiding principle:** the goal isn't to chase every technology trend, but to establish engineering principles for trustworthy industrial decisions — principles durable enough to outlast any one wave of tooling. Success looks like practitioners citing and building on these ideas because they're useful, not because they're ours.
 
 ### Explore
 
