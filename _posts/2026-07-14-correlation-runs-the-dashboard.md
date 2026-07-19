@@ -8,13 +8,13 @@ tags: [grounded-reasoning]
 excerpt_separator: <!--more-->
 ---
 
-<!-- AUTHOR DRAFT — for your read. Third article of Volume I: Motivation — a breadth preview of dimension 2 (Grounded Reasoning), a taste rather than the deep dive that comes in a later, dedicated volume. Delete this comment before publishing. -->
+An anecdote from early in my career makes this concrete. Two motors on the same site, with no process or electrical connection between them, and the data showed Motor B reliably overheating a few hours after Motor A, every single day. For a while, that looked like a real finding — watch Motor A, and you could see Motor B's trouble coming.
+
+The actual cause had nothing to do with either motor. Motor A sat on the east side of the installation and caught the sun first; Motor B, further west, caught it a few hours later. Both were heating up from the same source — the day's solar load — just offset by geography. Fix Motor A, and Motor B keeps overheating right on schedule. The correlation was real. The causation everyone assumed from it was not.
 
 Every plant has a dashboard, and every dashboard has a pattern-matcher behind it now. Show it enough history, and it will find things that move together. Corrosion rates and steam-trap proximity. Vibration and ambient temperature. Throughput and a dozen variables nobody asked about.
 
-Two of those correlations are real mechanisms. The rest are coincidence wearing a p-value. The dashboard cannot tell you which is which. Neither, reliably, can the model behind it — not because the model is bad, but because correlation was never built to answer the question a plant actually needs answered.
-
-<!--more-->
+Two of those correlations are real mechanisms. The rest are coincidence wearing a p-value. The dashboard cannot tell you which is which. Neither, reliably, can the model behind it, not because the model is bad, but because correlation was never built to answer the question a plant actually needs answered.
 
 ## Two things that look alike
 
@@ -57,14 +57,18 @@ Which means the causal structure has to come from somewhere other than trial and
 
 ## Where the causal knowledge actually comes from
 
-None of this argues against using AI to help build the causal picture — only against trusting an unreviewed one. A live, useful pattern in the field right now: AI proposes candidate causal relationships from data and failure history at build time, and a subject-matter expert reviews and certifies them before anything reaches an operator. The AI is fast at hypothesis generation. The standard, and the engineer who knows it, are what turn a hypothesis into something worth grounding a decision in.
+None of this argues against using AI to help build the causal picture — only against trusting an unreviewed one. 
 
-That is also where dimension 1 and dimension 2 of this research program meet. Engineering Knowledge is the standards, the failure mechanisms, the physics that already exist. Grounded Reasoning is the discipline of making sure an AI's inferences are constrained by that knowledge rather than running loose on correlation alone. Neither works without the other.
+A live, useful pattern in the field right now: AI proposes candidate causal relationships from data and failure history at build time, and a subject-matter expert reviews and certifies them before anything reaches an operator. 
+
+AI is fast at hypothesis generation. The standard, and the engineer who knows it, are what turn a hypothesis into something worth grounding a decision in.
+
+That is also where Engineering Knowledge and Grounded Reasoning meet. Engineering Knowledge is the standards, the failure mechanisms, the physics that already exist. Grounded Reasoning is the discipline of making sure an AI's inferences are constrained by that knowledge rather than running loose on correlation alone. Neither works without the other.
 
 ## A preview, not the deep dive
 
 Grounded reasoning is one half of what a trustworthy recommendation actually requires — [the other half]({{ "/articles/2026/07/12/the-ungoverned-middle/" | relative_url }}) is what happens once that recommendation exists: who is accountable for acting on it, and how. Both halves answer the same provocation — [a confident wrong answer is worse than a refusal]({{ "/articles/2026/07/10/the-next-industrial-catastrophe/" | relative_url }}) — and neither reasoning nor governance alone closes that gap.
 
-This is one of seven dimensions this program is built around, and it deserves a volume of its own — the causal ladder, the historian trap, and where causal knowledge comes from are each worth far more than a paragraph. That volume is coming; which dimension earns it first isn't decided yet. What is decided is the shape of the whole thing, and [the next piece]({{ "/articles/2026/07/18/engineering-trustworthy-industrial-ai/" | relative_url }}) is where it gets named.
+This is one of seven dimensions this program is built around, and it deserves a volume of its own — the causal ladder, the historian trap, and where causal knowledge comes from are each worth far more than a paragraph.  We will name and iscuss the shape of the whole thing in next article.
 
 Correlation will keep running the dashboard. It should. But the plant runs on causation, and until the reasoning underneath an AI's recommendation is grounded in the same mechanisms an engineer would cite, the dashboard and the plant are not talking about the same thing.

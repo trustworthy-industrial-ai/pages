@@ -8,7 +8,7 @@ tags: [governed-decision-layer, who-signs]
 excerpt_separator: <!--more-->
 ---
 
-Watch where the money and talent flow in industrial AI, and you will see them pour onto two fronts — often from the same companies.
+Watch where the money and talent flow in industrial AI, and you will see them pour onto two fronts, often from the same companies.
 
 The first front is **prediction**. Anomaly detection, prognostics, foundation models, digital twins — remarkable work, and getting better every quarter.
 
@@ -20,7 +20,7 @@ Between the two fronts sits the most consequential step in the whole chain, and 
 
 ## From prediction to commitment
 
-A prediction, by itself, costs nothing and gives nothing. *Bearing temperature trending anomalous; elevated probability of failure within thirty days.* Interesting — but nothing in the plant has changed yet.
+A prediction, by itself, costs nothing and gives nothing. *Bearing temperature trending anomalous; elevated probability of failure within thirty days.* Interesting! but nothing in the plant has changed yet.
 
 The plant changes when someone, or something, commits: advance the inspection or defer it. Change the setpoint or hold it. Approve the work order or escalate it. A decision is a prediction that has acquired consequences.
 
@@ -30,15 +30,15 @@ Model capability answers none of those questions. It was never supposed to.
 
 ## The gap nobody owns
 
-The prediction front stops at a confidence score. It hands over an "insight" and considers the job done — reasonably, because the model team's remit ends at accuracy.
+The prediction front stops at a confidence score. It hands over an "insight" and considers the job reasonably done, because the model team's remit ends at accuracy.
 
-The execution front picks up at the action. An agent that can raise a work order treats the decision as little more than a parameter in an API call — also reasonably, because the framework's remit begins at execution.
+The execution front picks up at the action. An agent that can raise a work order treats the decision as little more than a parameter in an API call, also reasonable, because the framework's remit begins at execution.
 
 Between the two remits, the decision falls through. It belongs to everyone and is engineered by no one.
 
-The informed objection arrives right here: surely this is solved — decision management, BPM, policy-as-code, human-in-the-loop checkpoints.
+The informed objection arrives right here: surely this is solved: decision management, BPM, policy-as-code, human-in-the-loop checkpoints.
 
-Look at what each of them actually governs. Workflow tools govern *what happens next*. Policy engines govern *who may call what*. Decision engines govern the decisions you can enumerate into rules in advance. A checkpoint can collect a signature — but it cannot supply the grounds. None of them governs the commitment itself: whether *this* recommendation, on *this* asset, under *this* procedure, is allowed, within what limits, and who answers for it. A BPM system can route a decision to the right inbox. It cannot ground one.
+Look at what each of them actually governs. Workflow tools govern *what happens next*. Policy engines govern *who may call what*. Decision engines govern the decisions you can enumerate into rules in advance. A checkpoint can collect a signature, but it cannot supply the grounds. None of them governs the commitment itself: whether *this* recommendation, on *this* asset, under *this* procedure, is allowed, within what limits, and who answers for it. A BPM system can route a decision to the right inbox. It cannot ground one.
 
 ## Automation is not autonomy
 
@@ -48,31 +48,35 @@ For people, it built standard operating procedures, permit-to-work, management o
 
 For machines, the control and OT community has been automating shop-floor decisions for sixty years: control loops, interlocks, safety-instrumented systems — thousands of commitments a second, deterministic, and superbly engineered.
 
-Respect how that second regime works, and you can see its boundary. It governs by enumeration: every condition-action pair specified in advance, exhaustively verifiable before commissioning, frozen until a formal change process reopens it. And when the world strays outside the enumerated space, it has one conservative answer — trip to a safe state and call a human. These are not flaws. They are exactly the design choices that make safety verifiable against defined risk targets, in a decision space that is narrow, closed, and static.
+Respect how the machine control regime works, and you can see its boundary. It governs by enumeration: every condition-action pair specified in advance, exhaustively verifiable before commissioning, frozen until a formal change process reopens it. And when the world strays outside the enumerated space, it has one conservative answer — trip to a safe state and call a human. These are not flaws. They are exactly the design choices that make safety verifiable against defined risk targets, in a decision space that is narrow, closed, and static.
 
-There is a word for what that layer does, and it is not the word for what AI promises. The control layer *automates*: it executes, at speed and without fatigue, decisions that humans already made — at design time, in the control narrative, in the cause-and-effect matrix. The interlock does not decide anything; the engineer who wrote it decided, years ago. What AI has opened up is categorically different: *autonomy* — systems that can make decisions nobody pre-made, in situations nobody enumerated. *Should this inspection be deferred? Which failure mechanism explains this vibration signature? Is today's permit deviation acceptable?* Open-ended, contextual, reasoning-shaped. They fit neither regime: too open-ended for the interlock, too many and too fast for the committee.
+There is a word for what that layer does, and it is not the word for what AI promises. 
 
-That potential is worth wanting. Deep operational expertise is scarce and getting scarcer as a generation of engineers retires. Autonomy is how the judgment of the few can reach every asset, on every shift, at every site — including the night shift, where the best corrosion engineer has never worked. It is how decisions can move at the pace of the process rather than the pace of the meeting, and how fewer people spend their working lives in harm's way.
+The control layer *automates*: it executes, at speed and without fatigue, decisions that humans already made at design time, in the control narrative, in the cause-and-effect matrix. The interlock does not decide anything; the engineer who wrote it decided, years ago. 
+
+What AI has opened up is categorically different: *autonomy* — systems that can make decisions nobody pre-made, in situations nobody enumerated. *Should this inspection be deferred? Which failure mechanism explains this vibration signature? Is today's permit deviation acceptable?* Open-ended, contextual, reasoning-shaped. They fit neither regime: too open-ended for the interlock, too many and too fast for the committee.
+
+Autonomy is a worthy pursuit. Deep operational expertise is scarce and getting scarcer as a generation of engineers retires. Autonomy is how the judgment of the few can reach every asset, on every shift, at every site — including the night shift, when the best corrosion engineer is not available. It is how decisions can move at the pace of the process rather than the pace of the meeting, and how fewer people spend their working lives in harm's way.
 
 But autonomy cannot borrow automation's trust. Automation earned its licence through enumeration and systematic verification; autonomy, by definition, operates where enumeration ends. Its trust has to be [earned a different way]({{ "/terms/#earned-autonomy" | relative_url }}) — decision by decision, with evidence.
 
 ## Unsigned
 
-Autonomy carries exactly these new decisions into regimes built for something else. We bolt it onto the old ones, or worse, route around them entirely. This, more than model quality, is why pilots stall. The pilot works, the value case is real, and the rollout dies in a meeting where someone asks who is accountable when the AI is wrong — and the room goes quiet.
+Autonomy carries exactly these new class of decisions into regimes built for something else. We bolt it onto the old ones, or worse, route around them entirely. This, more than model quality, is why pilots stall. The pilot works, the value case is real, and the rollout dies in a meeting where someone asks who is accountable when the AI is wrong — and the room goes quiet.
 
-I have lived a version of this. Years ago — classical optimization, well before the current AI wave — we replaced a blanket ten-days-of-stock policy at a global electronics manufacturer with recommendations tuned to each item: 15.5 days of cover here, 2.7 days there, every number defensible from the data — computed using analytics algorithms taking into account supply and demand side uncertainties. The planners were not convinced. They asked for an override capability — for exceptions, a reasonable ask. Within weeks, nearly everything had been overridden back to ten days. Our numbers were not wrong; they were unsigned. Ten days was the number a planner could trust and would defend. Winning real adoption took two more years.
+I have lived a version of this. Years ago — classical optimization, well before the current AI wave — we replaced a blanket ten-days-of-stock policy at a global electronics manufacturer with recommendations tuned to each item: 15.5 days of cover here, 2.7 days there, every number computed from the data using sophisticated algorithms taking into account supply and demand side uncertainties. The planners were not convinced. They asked for an override capability for exceptions, a reasonable ask, one may say. Within weeks, nearly everything was overridden back to ten days. Our numbers were not wrong; they were unsigned. Ten days was the number a planner could trust and would defend. Winning real adoption took two more years.
 
 ## Naming the layer
 
-What the middle needs is not a better model or a faster agent. It needs an engineered layer of its own — this program calls it the [**Governed Decision Layer**]({{ "/terms/#governed-decision-layer" | relative_url }}): the architectural layer between reasoning and operational action, responsible for five duties.
+What the middle needs is not a better model or a faster agent. It needs an engineered layer of its own — we call it the [**Governed Decision Layer**]({{ "/terms/#governed-decision-layer" | relative_url }}): the architectural layer between reasoning and operational action, responsible for five duties.
 
-- **Validate** — is this recommendation grounded in the asset, the data, and the standard that governs them, or is it merely fluent?
-- **Govern** — which procedure applies to this decision, and what does it require?
-- **Explain** — can the reasoning be examined by the person accountable, in their terms, *before* they are asked to commit?
-- **Authorize** — may this proceed, must it hold, must it escalate, or must it abort? And under whose authority?
-- **Record** — is there a decision record that meets a standard an incident review would accept, years from now?
+- **Validate**: is this recommendation grounded in the asset, the data, and the standard that governs them, or is it merely fluent?
+- **Govern**: which procedure applies to this decision, and what does it require?
+- **Explain**: can the reasoning be examined by the person accountable, in their terms, *before* they are asked to commit?
+- **Authorize**: may this proceed, must it hold, must it escalate, or must it abort? And under whose authority?
+- **Record**: is there a decision record that meets a standard an incident review would accept, years from now?
 
-Every one of these duties exists today — scattered across SOPs, review meetings, and the judgment of experienced engineers. The engineering act is to make the layer explicit, so that AI-assisted decisions pass through it by construction rather than by goodwill.
+Every one of these duties exists today, but scattered across SOPs, review meetings, and the judgment of experienced engineers. The engineering act is to make the layer explicit, so that AI-assisted decisions pass through it by construction rather than by goodwill.
 
 In sequence, the five duties are also how a recommendation becomes signable. Validate and explain turn a raw output into evidence. Govern supplies the applicable procedure and its limits. Authorize is the signature itself. Record closes the loop — which is exactly the shape the next test asks for.
 
@@ -118,13 +122,13 @@ The fastest way to find the ungoverned middle in any system is a [one-line test]
 <figcaption style="font-size:0.82rem;color:var(--muted,#5b6472);text-align:center;margin-top:0.6rem;">The who-signs test: a decision is operationally ready only when a named person can sign it — because the system supplied the grounds.</figcaption>
 </figure>
 
-Take any AI-assisted operational decision and ask whose name is on it. If the answer is "the model," the system is not ready. If the answer is "nobody," the system is not ready. The system is ready when a named person — or a named authority acting under explicit delegation — can sign, *because the system gives them grounds to sign*: the evidence, the applicable procedure, the limits, and the record.
+Take any AI-assisted operational decision and ask whose name is on it. If the answer is "the model," the system is not ready. If the answer is "nobody," the system is not ready. The system is ready when a named person — or a named authority acting under explicit delegation — can sign (during run or in advance), *because the system gives them grounds to sign*: the evidence, the applicable procedure, the limits, and the record.
 
 One boundary should be stated plainly: some signatures never delegate. Decisions that create, modify, or bypass a SIL-rated barrier are signed by a human — at design time and at every change, by standard and, in most jurisdictions, by law — no matter how strong the grounds. That is not a limitation of the layer; it is one of its jobs: knowing which decisions can be progressively delegated as trust is earned, which never can, and saying *never* with the same confidence as *proceed*.
 
 Signing is not a formality. It is trust, compressed into accountability. A signature says: I have seen the grounds, I accept the consequences, and I can defend this decision to anyone who asks. An industrial AI system that cannot support that sentence is a prediction engine with good marketing.
 
-## Grounded Reasoning for Better Decisions
+## Half the Answer
 
 Decision governance is only one half of what makes a recommendation trustworthy. [The other half]({{ "/articles/2026/07/14/correlation-runs-the-dashboard/" | relative_url }}) is whether the reasoning underneath it was grounded at all — a different failure mode, covered next. After that, [the piece that follows]({{ "/articles/2026/07/18/engineering-trustworthy-industrial-ai/" | relative_url }}) draws both together: these are two of seven dimensions a whole research program is organized around, not two unrelated complaints.
 
