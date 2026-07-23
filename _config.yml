@@ -1,7 +1,7 @@
 # Engineering Trustworthy Industrial Decisions in the Age of AI — site configuration
 
 title: Engineering Trustworthy Industrial Decisions in the Age of AI
-author: Sanjay Prasad
+author: Sanjay K Prasad
 # email: intentionally unset -- hello@trustworthy-industrial-decisions.io does
 # not exist yet (custom domain not purchased). Set this once that mailbox is
 # real; footer.html only renders it when site.email is present.

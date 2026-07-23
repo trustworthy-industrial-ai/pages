@@ -8,13 +8,13 @@ tags: [grounded-reasoning]
 excerpt_separator: <!--more-->
 ---
 
-An anecdote from early in my career makes this concrete. Two motors on the same site, with no process or electrical connection between them, and the data showed Motor B reliably overheating a few hours after Motor A, every single day. For a while, that looked like a real finding — watch Motor A, and you could see Motor B's trouble coming.
+An anecdote from early in my data science career makes this concrete. Two motors on the same site, with no process or electrical connection between them, and the data showed Motor B reliably overheating a few hours after Motor A, every single day. For a while, that looked like a real finding — watch Motor A, and you could see Motor B's trouble coming.
 
-The actual cause had nothing to do with either motor. Motor A sat on the east side of the installation and caught the sun first; Motor B, further west, caught it a few hours later. Both were heating up from the same source — the day's solar load — just offset by geography. Fix Motor A, and Motor B keeps overheating right on schedule. The correlation was real. The causation everyone assumed from it was not.
+The actual cause had nothing to do with either motor. Motor A sat on the east side of the installation and caught the sun first; Motor B, further west, caught it a few hours later. Both were heating up from the same source — the day's solar load — just offset by geography. Fix Motor A, and Motor B keeps overheating right on schedule. The correlation was real. The causation it seemed to indicate was not.
 
-Every plant has a dashboard, and every dashboard has a pattern-matcher behind it now. Show it enough history, and it will find things that move together. Corrosion rates and steam-trap proximity. Vibration and ambient temperature. Throughput and a dozen variables nobody asked about.
+Every plant has a dashboard, and every dashboard is primarily a set of data views, and most of those views are post-mortem: they show what already happened. There is a pattern-matcher behind it now beyond the usual post-mortem views. Show it enough history, and it will find things that move together. Corrosion rates and steam-trap proximity. Vibration and ambient temperature. Throughput and a dozen variables - that may be correlated, but not related.
 
-Two of those correlations are real mechanisms. The rest are coincidence wearing a p-value. The dashboard cannot tell you which is which. Neither, reliably, can the model behind it, not because the model is bad, but because correlation was never built to answer the question a plant actually needs answered.
+Some of those correlations are real mechanisms. Most are coincidence wearing a p-value. The dashboard can't tell you which is which. Neither, reliably, can the model behind it, not because the model is bad, but because correlation was never built to answer the real question: why this happened.
 
 ## Two things that look alike
 
@@ -22,7 +22,7 @@ Here is the distinction the rest of this piece rests on, and it fits in a senten
 
 Say a model notices that pipe spans near steam traps corrode faster. Correlation stops there — a pattern, filed and dashboarded. Causation asks the next question: *why?* In this case, engineering already knows the mechanism, and it has a name — corrosion under insulation, driven by moisture ingress where a leaking trap wets the lagging. That mechanism is what tells you where to strip insulation and inspect, not the correlation. The correlation and the mechanism can point at the same pipe spans and still license completely different actions.
 
-Judea Pearl gave this distinction a ladder: association at the bottom (what do I observe?), intervention in the middle (what happens if I act?), counterfactual at the top (what would have happened if I hadn't?). Most industrial AI today lives on the bottom rung by construction — it was trained to predict, not to intervene. A plant, on the other hand, runs almost entirely on the top two rungs. Every maintenance decision is an intervention. Every root-cause investigation is a counterfactual. An AI that only climbs to the first rung is answering a different question than the one being asked of it.
+Judea Pearl gave this distinction a ladder: association at the bottom (what do I observe?), intervention in the middle (what happens if I act?), counterfactual at the top (what would have happened if I hadn't?). Most industrial AI today lives on the bottom rung by construction — it was trained to predict, not to intervene. A plant, on the other hand, is run almost entirely on the top two rungs. Every maintenance decision is an intervention. Every root-cause investigation is a counterfactual. An AI that only climbs to the first rung is answering a different question than the one being asked of it.
 
 <figure style="margin:2.2rem 0;">
 <svg viewBox="110 0 590 260" role="img" aria-labelledby="ladder-title" style="width:100%;height:auto;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;">
@@ -69,6 +69,6 @@ That is also where Engineering Knowledge and Grounded Reasoning meet. Engineerin
 
 Grounded reasoning is one half of what a trustworthy recommendation actually requires — [the other half]({{ "/articles/2026/07/12/the-ungoverned-middle/" | relative_url }}) is what happens once that recommendation exists: who is accountable for acting on it, and how. Both halves answer the same provocation — [a confident wrong answer is worse than a refusal]({{ "/articles/2026/07/10/the-next-industrial-catastrophe/" | relative_url }}) — and neither reasoning nor governance alone closes that gap.
 
-This is one of seven dimensions this program is built around, and it deserves a volume of its own — the causal ladder, the historian trap, and where causal knowledge comes from are each worth far more than a paragraph.  We will name and iscuss the shape of the whole thing in next article.
+This is one of seven dimensions this program is built around, and it deserves a volume of its own — the causal ladder, the historian trap, and where causal knowledge comes from are each worth far more than a paragraph.  We will name and discuss the shape of the whole thing in next article.
 
 Correlation will keep running the dashboard. It should. But the plant runs on causation, and until the reasoning underneath an AI's recommendation is grounded in the same mechanisms an engineer would cite, the dashboard and the plant are not talking about the same thing.

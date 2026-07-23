@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Engineering Trustworthy Industrial AI"
+title: "Engineering Trustworthy Industrial Decisions in the Age of AI"
 description: "Capability is advancing. Trust is not. Defining the discipline — and the seven dimensions — of engineering trust into industrial AI."
 date: 2026-07-18 08:00:00 +0530
 author: "Dr. Sanjay K Prasad"
@@ -22,7 +22,7 @@ But will it last — or is this another hype cycle? Every wave leaves its mark o
 
 <!--more-->
 
-The plant manager's questions cannot be answered with multi-agent architectures, MCP protocols, or attention mechanisms. Capability is not the bottleneck. Trust is — and trust does not arrive on its own; it has to be engineered. Whether asked of a human or a machine, *Can I trust you?* has only one acceptable answer in operations: **Yes — and here is the evidence.** That answer comes out of engineering, not wishing. That is the premise of this research program: **Engineering Trustworthy Industrial AI**. Two of those words carry all the weight.
+The plant manager's questions cannot be answered with multi-agent architectures, MCP protocols, or attention mechanisms. Capability is not the bottleneck. Trust is — and trust does not arrive on its own; it has to be engineered. Whether asked of a human or a machine, *Can I trust you?* has only one acceptable answer in operations: **Yes — and here is the evidence.** That answer comes out of engineering, not wishing. That is the premise of this research program: **Engineering Trustworthy Industrial Decisions in the Age of AI**. Two of those words carry all the weight.
 
 ## The first word: Engineering
 
@@ -134,6 +134,8 @@ One objection is probably already forming. It deserves an answer before moving o
 A fair challenge: seven dimensions, and not one of them says "build better models." Are we ignoring the actual AI?
 
 No — we are positioning it. Structural engineering is not metallurgy, but no structural engineer is indifferent to steel: the discipline *specifies* the steel it needs, *verifies* what it receives, and takes responsibility for everything it builds with it. That is exactly the relationship this framework has with AI models. Frontier model capability is treated as a supplied input, like structural steel. It is a deliberate engineering choice, and it comes with obligations: specify what you need, test what you get, and never build trust on a component you have not verified.
+
+There is a reflex worth naming directly, because this program is built against it. When an AI initiative underperforms, the instinctive response is to swap the model — a new architecture, a new vendor, a different benchmark. Eliyahu Goldratt described the general version of this in *The Goal*, decades before AI existed: when you do not understand what is actually limiting a system, you shuffle the cards and deal again, and a different hand rarely fixes a problem the deal never caused. Ask instead what is actually constraining the result. It is rarely the model. It is almost always one of the seven dimensions above — a knowledge gap, an ungrounded inference, an unsigned decision. An industrial AI program should be evaluated by its impact on that constraint, not by a benchmark score on the model behind it.
 
 Real AI engineering still lives inside the dimensions. Engineering Knowledge includes building ontologies and causal models. Some of that discovery work uses AI itself, with expert review before anything is deployed. Grounded Reasoning includes model selection, domain adaptation, and hybrid architectures that combine learned models with physics and standards. Operational Deployment owns model validation and re-validation in service. What this program does not do is train frontier models — that work is concentrated in a handful of labs, it is advancing fast without our help, and no industrial organization will out-train them. Nor needs to: what no lab will do *for* industry is the seven dimensions.
 
